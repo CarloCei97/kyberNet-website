@@ -5,7 +5,7 @@
   width: 100%;
   height: var(--header-height);
   z-index: 1000;
-  /* No background here—background is handled by the .header-bg element */
+  /* Background is handled by .header-bg */
 }
 
 .header-bg {
@@ -14,44 +14,52 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--header-bg); /* Defined in your theme.css */
+  background: var(--header-bg); /* Keep this defined in theme.css */
   transition: opacity 0.3s ease;
-  z-index: -1; /* Place behind the content */
+  z-index: -1; /* behind content */
 }
 
+/* We split the container into two parts:
+   One for the logo (left) and one for the navigation (center) */
 .container {
   display: flex;
+  justify-content: space-between; /* Logo on left, nav on right */
   align-items: center;
   padding: 0 var(--spacing-md);
+  width: 100%;
 }
 
+/* If you want the nav to be centered in the whole header,
+   consider wrapping the nav in an extra div that spans full width */
 .logo {
-  flex: 0;
+  /* Adjust margin so that the logo doesn't crowd the nav */
   margin-right: var(--spacing-md);
-  background: transparent;
 }
 
 .logo-image {
-  height: 60px; /* Adjust as needed */
+  height: 60px; /* as before */
   width: auto;
 }
 
 .nav {
-  flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: var(--spacing-md);
-  background: transparent;
 }
 
 .nav-link {
   color: var(--header-text-color);
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
-  background: transparent;
 }
 
 .nav-link:hover {
   color: var(--secondary-color);
   transform: translateY(-2px);
 }
+
+/* Optional: if you want the navigation to be exactly centered,
+   you could use an extra wrapper:
+   .nav-wrapper { width: 100%; display: flex; justify-content: center; }
+   and then place your .nav inside that .nav-wrapper */

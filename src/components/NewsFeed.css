@@ -9,7 +9,6 @@
   color: var(--header-text-color, #fff);
   font-size: var(--font-size-medium-l);
   margin-bottom: var(--spacing-md);
-  /* Optionally add a transition for smooth opacity changes */
   transition: opacity 0.3s ease;
 }
 
@@ -19,10 +18,14 @@
   overflow-x: auto;
   overflow-y: visible;
   width: 100%;
-  padding: 5rem;
+  /* Reduce excessive vertical padding to avoid too much empty space */
+  padding: 2rem var(--spacing-md);
 }
 
+/* Add horizontal margin to each card wrapper to prevent overlap on scale */
 .news-card-wrapper {
   flex: 0 0 auto;
   overflow: visible;
+  margin: 0 var(--spacing-md);
+  transform-origin: center;  /* Scale from the center */
 }
