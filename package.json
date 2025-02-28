@@ -1,5 +1,6 @@
 {
   "name": "my-it-consulting-site",
+  "homepage": "https://carlocei97.github.io/kyberNet-website/",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -15,7 +16,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
