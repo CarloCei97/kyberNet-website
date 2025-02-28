@@ -1,0 +1,28 @@
+.newsfeed-container {
+  width: 100%;
+  padding: var(--spacing-md);
+  background-color: transparent;
+}
+
+.newsfeed-headline {
+  text-align: center;
+  color: var(--header-text-color, #fff);
+  font-size: var(--font-size-medium-l);
+  margin-bottom: var(--spacing-md);
+  /* Optionally add a transition for smooth opacity changes */
+  transition: opacity 0.3s ease;
+}
+
+.news-cards {
+  display: flex;
+  gap: var(--spacing-xl);
+  overflow-x: auto;
+  overflow-y: visible;
+  width: 100%;
+  padding: 5rem;
+}
+
+.news-card-wrapper {
+  flex: 0 0 auto;
+  overflow: visible;
+}

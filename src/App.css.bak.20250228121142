@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background: #f4f4f4;
+}
+
+/* Add top padding equal to your header’s height */
+.content-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 80px 1rem 2rem; /* 80px on top (adjust as needed) */
+}

@@ -1,0 +1,21 @@
+.service-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: scale(1.02);
+}
+
+.service-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  color: #555;
+}

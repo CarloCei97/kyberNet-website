@@ -1,0 +1,66 @@
+:root {
+  --card-border-radius: 8px;
+  --card-overlay-bg: rgba(0, 0, 0, 0.6); /* Transparent black background */
+  --card-width: 500px;
+  --card-height: 400px;
+  --overlay-height: 30%; /* 30% of the card's height */
+  --transition-speed: 0.3s;
+  --text-color-light: white;
+}
+
+.news-card {
+  position: relative;
+  width: var(--card-width);
+  height: var(--card-height);
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--card-border-radius);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform var(--transition-speed) ease;
+  padding: 10 rem;
+}
+
+.news-card:hover {
+  transform: scale(1.03);
+}
+
+/* Overlay container fixed at the bottom, occupying 30% of the card */
+.news-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--overlay-height);
+  background: var(--card-overlay-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* Content inside the overlay */
+.news-card-content {
+  overflow: hidden;
+  height: 100%;
+  color: white;
+}
+
+.news-card-title {
+  margin: 0;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news-card-description {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* limits to 2 lines; adjust as needed */
+  -webkit-box-orient: vertical;
+}

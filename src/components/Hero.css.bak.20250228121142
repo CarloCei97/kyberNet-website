@@ -1,0 +1,18 @@
+.hero {
+  background-image: url('https://example.com/your-hero-image.jpg'); /* Replace with your actual hero image URL */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}

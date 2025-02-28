@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  background-image: var(--hero-background-image);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 15rem var(--spacing-md) 6rem;
+  color: white;
+  text-align: center;
+  transition: opacity var(--transition-speed) ease;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero p {
+  font-size: var(--font-size-medium);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-content {
+  margin-top: 5rem;  /* Adjust this value to move the text lower */
+}

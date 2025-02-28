@@ -1,0 +1,64 @@
+:root {
+  /* Colors */
+  --primary-color: #04329E;
+  --primary-color-light: #66B2FF;
+  --primary-color-dark: #0056b3;
+
+  --secondary-color: #ffdd57;
+  --secondary-color-light: #ffe680;
+  --secondary-color-dark: #ffbb00;
+
+  --accent-color: #FF5722;
+  --accent-color-light: #FF8A65;
+  --accent-color-dark: #E64A19;
+
+  --background-color: #f4f4f4;
+  --surface-color: #ffffff;
+
+  --text-color: #333333;
+  --text-color-light: #666666;
+  --text-color-dark: #000000;
+
+  --header-text-color: white;
+
+  /* Font sizes */
+  --font-size-large: 3rem;
+  --font-size-medium-l: 2.5rem;
+  --font-size-medium: 1.5rem;
+  --font-size-small: 1rem;
+  
+  /* Header specific */
+  --header-bg: var(--primary-color);
+  --header-bg-scroll: var(--primary-color-dark); /* Change as needed */
+
+  /* Background settings */
+  --global-background-image: url("https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_1280.jpg");
+  --global-overlay-opacity: 0.4;
+
+  /* Typography */
+  --header-font: 'Roboto', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  --monospace-font: 'Courier New', monospace;
+
+  /* Sizing & Spacing */
+  --base-border-radius: 8px;
+  --card-border-radius: calc(var(--base-border-radius) * 2);
+  --button-border-radius: var(--base-border-radius);
+
+  --header-height: 80px;
+  --footer-height: 60px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Transitions */
+  --transition-speed: 0.3s;
+
+  /* Shadows */
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  --header-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

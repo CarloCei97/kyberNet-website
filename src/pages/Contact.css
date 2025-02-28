@@ -1,0 +1,26 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-control label {
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 0.75rem;
+  background: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
