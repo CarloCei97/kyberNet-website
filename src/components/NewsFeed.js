@@ -10,8 +10,8 @@ const newsData = [
     description:
       "Google has announced a breakthrough in AI technology, introducing a next-generation AI assistant that promises more natural conversation and smarter integration across services.",
     image:
-      "https://media.wired.com/photos/66e221e411ae89cc49da0490/master/w_2240,c_limit/OpenAI-Problem-Solving-Business.jpg",
-    url: "https://techcrunch.com/2025/02/28/google-ai-assistant"
+      "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/blog_gemini_keyword_header.width-2200.format-webp.webp",
+    url: "https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/"
   },
   {
     category: "AI",
@@ -19,8 +19,8 @@ const newsData = [
     description:
       "OpenAI's latest GPT-5 model is set to revolutionize natural language processing with even more advanced reasoning and creative capabilities.",
     image:
-      "https://www.wired.com/images/2025/02/openai-gpt5.jpg",
-    url: "https://www.wired.com/story/openai-gpt5-release/"
+      "https://img.ai4business.it/wp-content/uploads/2024/02/08175116/word-image-22367-1.jpeg.webp",
+    url: "https://www.forbes.com/sites/bernardmarr/2025/02/19/openais-gpt-5-is-coming-heres-what-we-know-so-far/"
   },
   {
     category: "Data Science",
@@ -28,7 +28,7 @@ const newsData = [
     description:
       "A new data science platform promises to reduce analysis time by 50% by integrating automated machine learning workflows and real-time data visualization.",
     image:
-      "https://www.forbes.com/sites/datascience/2025/02/28/new-data-platform.jpg",
+      "https://www.microsoft.com/en-us/microsoft-fabric/blog/wp-content/uploads/2024/11/e604ed99-d03f-4dbe-b22b-735f70565137.webp",
     url: "https://www.forbes.com/sites/datascience/2025/02/28/new-data-science-platform-accelerates-analytics/"
   },
   {
@@ -37,8 +37,8 @@ const newsData = [
     description:
       "Experts reveal the top trends in data science for 2025, including predictive analytics, AI-driven decision making, and enhanced data security measures.",
     image:
-      "https://www.analyticsinsight.net/wp-content/uploads/2025/02/data-science-trends.jpg",
-    url: "https://www.analyticsinsight.net/data-science-trends-2025-revealed/"
+      "https://bostoninstituteofanalytics.b-cdn.net/wp-content/uploads/2025/01/Top-10-Data-Science-Trends-for-2025-Big-Datas-Next-Evolution-1.jpg",
+    url: "https://bostoninstituteofanalytics.org/blog/top-10-data-science-trends-for-2025/"
   }
 ];
 
