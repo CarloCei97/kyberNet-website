@@ -1,0 +1,136 @@
+/* Global Styles */
+.services-wrapper {
+    background: #121212;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeIn 1.2s ease;
+  }
+  
+  /* Hero Section */
+  .services-hero {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+  }
+  
+  .services-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease-out;
+  }
+  
+  .services-subtitle {
+    font-size: 1.5rem;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Services Grid */
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .service-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-out, float 4s ease-in-out infinite;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    animation: rotate 10s linear infinite;
+  }
+  
+  .service-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3498db;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+  }
+  
+  /* Call to Action */
+  .call-to-action {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .book-call-button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .book-call-button:hover {
+    transform: scale(1.05);
+    background: #2980b9;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-3px); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-title {
+      font-size: 2.5rem;
+    }
+    .services-subtitle {
+      font-size: 1.2rem;
+    }
+    .service-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  

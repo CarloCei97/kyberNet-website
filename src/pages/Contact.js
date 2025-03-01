@@ -26,19 +26,23 @@ const Contact = () => {
     e.preventDefault();
     if (validate()) {
       console.log('Form submitted:', form);
+      // Process form submission (e.g., send to backend)
       setForm({ name: '', email: '', message: '' });
       setErrors({});
     }
   };
 
   return (
-    <div className="content-container">
-      <h2>Contact Us</h2>
-      <p>Fill out the form below to get in touch with us.</p>
+    <div className="contact-container">
+      <div className="contact-header">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you. Fill out the form below and let's start the conversation.</p>
+      </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-control">
-          <label>Name</label>
+          <label htmlFor="name">Name</label>
           <input
+            id="name"
             name="name"
             value={form.name}
             onChange={handleChange}
@@ -47,8 +51,9 @@ const Contact = () => {
           {errors.name && <span className="error">{errors.name}</span>}
         </div>
         <div className="form-control">
-          <label>Email</label>
+          <label htmlFor="email">Email</label>
           <input
+            id="email"
             name="email"
             type="email"
             value={form.email}
@@ -58,8 +63,9 @@ const Contact = () => {
           {errors.email && <span className="error">{errors.email}</span>}
         </div>
         <div className="form-control">
-          <label>Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
+            id="message"
             name="message"
             value={form.message}
             onChange={handleChange}
