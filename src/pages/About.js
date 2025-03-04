@@ -24,26 +24,13 @@ const About = () => {
         <h2>Our Story</h2>
         <div className="story-content">
           <p>
-            It all began with a vision—to bridge the gap between technology and human potential. At KiberNet, we don’t just implement IT solutions;
+            It all began with a vision to bridge the gap between technology and human potential. At KiberNet, we don’t just implement IT solutions;
             we craft bespoke experiences that empower your business.
           </p>
           <p>
             Every challenge we’ve overcome and every milestone we’ve reached has been driven by our commitment to excellence and a deep understanding
             of our clients’ needs. We believe every line of code and every strategy is a vital chapter in your success story.
           </p>
-        </div>
-      </section>
-
-      <section className="team-section">
-        <h2>Meet Our Trailblazers</h2>
-        <div className="team-container">
-          {teamMembers.map((member, index) => (
-            <div className="team-card" key={index}>
-              <img src={member.img} alt={member.name} className="team-img" />
-              <h3 className="team-name">{member.name}</h3>
-              <p className="team-role">{member.role}</p>
-            </div>
-          ))}
         </div>
       </section>
     </div>

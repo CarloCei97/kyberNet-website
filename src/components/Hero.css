@@ -8,6 +8,7 @@
   color: white;
   text-align: center;
   transition: opacity var(--transition-speed) ease;
+  animation: slideDown 1s ease-out;
   z-index: 1;
 }
 
