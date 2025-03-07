@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/kyberNet-website/static/css/main.eb5466cf.css",
+    "main.css": "/kyberNet-website/static/css/main.6b631383.css",
     "main.js": "/kyberNet-website/static/js/main.82b1d476.js",
     "static/media/logo.png": "/kyberNet-website/static/media/logo.3f8de7f089da8325b952.png",
     "index.html": "/kyberNet-website/index.html",
-    "main.eb5466cf.css.map": "/kyberNet-website/static/css/main.eb5466cf.css.map",
+    "main.6b631383.css.map": "/kyberNet-website/static/css/main.6b631383.css.map",
     "main.82b1d476.js.map": "/kyberNet-website/static/js/main.82b1d476.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb5466cf.css",
+    "static/css/main.6b631383.css",
     "static/js/main.82b1d476.js"
   ]
 }

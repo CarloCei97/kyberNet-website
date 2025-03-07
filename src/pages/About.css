@@ -2,20 +2,23 @@
 .about-wrapper {
   font-family: 'Arial', sans-serif;
   color: #e0e0e0;
-  background-color: #121212;
+  background: var(--global-background-image);
   margin: 0;
   padding: 0;
+
 }
 
 /* Hero Section */
 .hero-section {
   position: relative;
   height: 60vh;
-  background: url('https://www.wallstreetitalia.com/app/uploads/2022/10/gettyimages-1359446412.jpg') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: opacity 0.5s ease;
+  padding: 22rem;
+  background: url('https://www.wallstreetitalia.com/app/uploads/2022/10/gettyimages-1359446412.jpg') center center/cover no-repeat;
+
 }
 
 .hero-content {
@@ -45,13 +48,12 @@
 /* Story Section */
 .story-section {
   padding: 60px 20px;
-  background-color: #1a1a1a;
 }
 
 .story-card {
   max-width: 900px;
   margin: 0 auto;
-  background: #2a2a2a;
+  background: rgba(0, 0, 0, 0.7);
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -72,7 +74,7 @@
 /* Gallery Section */
 .gallery-section {
   padding: 60px 20px;
-  background-color: #1a1a1a;
+  background: --global-background-i;
   text-align: center;
 }
 
